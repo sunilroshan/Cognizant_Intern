@@ -1,0 +1,37 @@
+/* Billing custom print styling */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .printable-invoice-area, .printable-invoice-area * {
+    visibility: visible;
+    color: #000 !important;
+    -webkit-text-fill-color: #000 !important;
+  }
+  .printable-invoice-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white !important;
+    color: black !important;
+    padding: 2rem;
+  }
+  .printable-invoice-area [class*="bg-"] {
+    background: #fff !important;
+  }
+  .printable-invoice-area svg {
+    color: #000 !important;
+    stroke: #000 !important;
+  }
+  .printable-invoice-area table {
+    border-color: #e2e8f0 !important;
+  }
+  .printable-invoice-area tr, .printable-invoice-area th, .printable-invoice-area td {
+    color: black !important;
+    border-color: #e2e8f0 !important;
+  }
+  .print-hide {
+    display: none !important;
+  }
+}

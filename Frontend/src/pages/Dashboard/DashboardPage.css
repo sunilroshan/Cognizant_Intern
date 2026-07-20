@@ -1,0 +1,30 @@
+.guest-dashboard-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.loyalty-pill {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  background-size: 200% 200%;
+  animation: shimmer 5s ease infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom CSS extensions for stat boards */
+.dashboard-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.room-status-item {
+  background: rgba(30, 41, 59, 0.3);
+  border: 1px solid rgba(51, 65, 85, 0.2);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}

@@ -1,0 +1,27 @@
+/* Rooms Page custom style sheet */
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.amenity-checkbox-label {
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.amenity-checkbox-label:hover {
+  color: #a5b4fc;
+}
+
+/* Ensure room cards clip overflow and keep badges inside */
+.room-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.capacity-badge {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+}
